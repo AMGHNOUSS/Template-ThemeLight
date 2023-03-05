@@ -734,7 +734,6 @@ html {
 .bolg .blog-content .text a {
     display: inline-block;
     text-decoration: none;
-    padding: 20px;
     background-color: var(--main-color);
     color: white;
     padding: 10px 20px;
@@ -806,4 +805,143 @@ html {
     color: #787878;
 }
 
+@media (max-width: 992px) {
+    .testimonial .testimonial-content {
+        grid-template-columns: 1fr;
+    }
+    .testimonial .testimonial-content #box1{
+        border-color: transparent transparent #bdbdbd  transparent ;
+    }
+    .testimonial .testimonial-content #box2{
+        border-color:  transparent transparent #bdbdbd transparent;
+    }
+    .testimonial .testimonial-content #box3{
+        border-color:  transparent transparent #bdbdbd transparent ;
+    }
+    .testimonial .testimonial-content #box4{
+        border-color: transparent transparent transparent transparent ;
+    }
+}
+
+@media (max-width: 500px) {
+    .testimonial .testimonial-content .box {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 10px;
+    }
+}
+
 /* END TESTIMONiAL */
+
+/* START CONTACT US*/
+
+.contact {
+    background-color: #f9f9f9;
+    padding: 40px;
+}
+
+.contact .contact-content {
+    display: flex;
+}
+
+.contact .contact-content .box {
+    text-align: center;
+    flex-basis: 50%;
+    margin-bottom: 10px;
+}
+.contact .contact-content .box iframe {
+    max-width: 80%;
+    max-height: 80%;
+    border-radius: 10px;
+}
+
+.contact .contact-content .infos{
+    flex-basis: 50%;
+    text-align: right;
+}
+
+.contact .contact-content .infos input{
+    border: 1px solid var(--main-color);
+    font-size: 14px;
+    color: #97a0af;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 15px;
+    width: 100%;    
+}
+
+
+.contact .contact-content .infos textarea{
+    border: 1px solid var(--main-color);
+    font-size: 14px;
+    color: #97a0af;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.contact .contact-content .infos input:focus,
+.contact .contact-content .infos textarea:focus{
+    outline: none;
+}
+
+.contact .contact-content .infos a{
+    text-align: right;
+    background-color: var(--main-color);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    border-radius: 40px;
+    padding: 17px 43px;
+    transition: 0.3s;
+}
+
+.contact .contact-content .infos a:hover{
+    color: var(--main-color);
+    background-color: white;
+    border: 1px solid var(--main-color);
+}
+
+@media (max-width: 992px) {
+    .contact .contact-content {
+        flex-direction: column;
+    }
+}
+/* END CONTACT US*/
+
+/* START FOOTER*/
+
+.footer {
+    background: #202322;
+    padding: 60px 0 40px;
+    text-align: center;
+    color: white;
+}
+
+@media (max-width: 500px) {
+    .footer {
+        padding: 30px 0 20px;
+    }
+}
+
+/* END FOOTER*/
+
+/* START RESPONSIVE MAIN HEADING */
+
+@media (max-width: 400px) {
+    .main-heading h2 {
+        font-size: 18px;
+    }
+    .main-heading h2::before {
+        width: 30px;
+    }
+    .main-heading h2::after {
+        width: 30px;
+        right: -80px;
+    }
+}
+
+/* END RESPONSIVE MAIN HEADING */
