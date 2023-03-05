@@ -667,4 +667,67 @@ html {
     background: #f1f1f1
 }
 
+.bolg .blog-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px,1fr));
+    grid-gap: 15px;
+}
+
+.bolg .blog-content .image{
+    display: flex;
+}
+
+.bolg .blog-content .image img{
+    max-width: 100%;
+    max-height: 100%;
+    flex-shrink: 0;
+}
+
+.bolg .blog-content .text{
+    background-color: white;
+    text-align: center;
+    padding: 40px 30px;
+}
+
+.bolg .blog-content .box .text h3::before{
+    content: '';
+    position: absolute;
+    width: 70px;
+    height: 2px;
+    background-color: var(--main-color);
+    left: 50%;
+    top: -20px;
+    transform: translateX(-50%);
+}
+
+.bolg .blog-content .box .text h3{
+    margin: 0;
+    position: relative;
+    text-transform: capitalize;
+    font-size: 16px;
+    color: #333;
+    margin-top: 10px;
+}
+
+.bolg .blog-content .text span{
+    color: #999;
+    font-size: 12px;
+}
+
+.bolg .blog-content .text p{
+    color: #999;
+    font-size: 14px;
+}
+
+.bolg .blog-content .text a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 20px;
+    background-color: var(--main-color);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-transform: uppercase;
+    font-size: 13px;
+}
 /* END BLOG */
